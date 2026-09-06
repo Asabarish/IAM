@@ -1,5 +1,6 @@
 # EXPERIMENT NO. 6
-
+***Sabarish A***
+***(212225230232)***
 ## LOGIN INTO AWS AND IMPLEMENT IDENTITY MANAGEMENT USING AMAZON IAM
 
 ------------------------------------------------------------------------
@@ -33,7 +34,8 @@ to Amazon S3.
 
 ### Screenshot
 
-![AWS Management Console](experiment6_assets/04-aws-console-home.jpeg)
+
+<img width="1609" height="910" alt="image" src="https://github.com/user-attachments/assets/034d6d10-48c6-4df4-b8b2-3fa415206bb9" />
 
 ------------------------------------------------------------------------
 
@@ -57,7 +59,8 @@ The group `cloudSecurity_2026` is now created.
 
 ### Screenshot --- IAM Group Created
 
-![IAM Group Created](experiment6_assets/01-iam-group-created.jpeg)
+
+<img width="1601" height="907" alt="image" src="https://github.com/user-attachments/assets/0b99608e-19be-4008-a5cf-bcd324d62e5e" />
 
 ------------------------------------------------------------------------
 
@@ -83,8 +86,8 @@ The group now has read-only access to Amazon S3.
 
 ### Screenshot --- Policy Attached
 
-![Amazon S3 Read Only
-Policy](experiment6_assets/02-s3-readonly-policy-attached.jpeg)
+
+<img width="1606" height="906" alt="image" src="https://github.com/user-attachments/assets/6c1b2f7e-9d1f-4593-8e29-063a00b42937" />
 
 ------------------------------------------------------------------------
 
@@ -102,7 +105,8 @@ Policy](experiment6_assets/02-s3-readonly-policy-attached.jpeg)
 
 ### Screenshot --- IAM User Created
 
-![IAM User Created](experiment6_assets/03-iam-user-created.jpeg)
+
+<img width="1602" height="905" alt="image" src="https://github.com/user-attachments/assets/417c9601-06bc-4a63-aac7-8e5cbca28716" />
 
 ------------------------------------------------------------------------
 
@@ -124,8 +128,8 @@ The user is now a member of the `cloudSecurity_2026` group.
 
 ### Screenshot --- User Added to Group
 
-> **Attach screenshot here if a separate group-membership screenshot is
-> required.**
+<img width="1422" height="804" alt="image" src="https://github.com/user-attachments/assets/f4ba29d0-ae6d-4a78-84f2-fafdf575a2fc" />
+
 
 ------------------------------------------------------------------------
 
@@ -161,7 +165,8 @@ Amazon S3 Read-only Access
 
 ### Screenshot --- User Permissions
 
-> **Attach screenshot here.**
+
+<img width="1429" height="798" alt="image" src="https://github.com/user-attachments/assets/4b19062c-9c80-4c3c-bdf0-304d0473e317" />
 
 ------------------------------------------------------------------------
 
@@ -180,8 +185,8 @@ Initially, console access for `student01` may be disabled.
 
 ### Screenshot --- Security Credentials / Console Access
 
-![Student01 Security
-Credentials](experiment6_assets/05-student01-security-credentials.jpeg)
+
+<img width="1610" height="914" alt="image" src="https://github.com/user-attachments/assets/718d8cec-610f-4134-96e1-ba30589a8f78" />
 
 ------------------------------------------------------------------------
 
@@ -193,12 +198,7 @@ The IAM user login requires the AWS account ID.
 2.  It can be found in the AWS account information.
 3.  Use **your own AWS account ID** when performing the experiment.
 
-### Screenshot --- AWS Account Information
 
-> **Attach screenshot here if required.**
->
-> **Do not publish passwords, secret access keys, or other sensitive
-> credentials in the repository.**
 
 ------------------------------------------------------------------------
 
@@ -227,8 +227,8 @@ The AWS Management Console should now open under the IAM user
 
 ### Screenshot --- IAM User Console
 
-![Student01 AWS
-Console](experiment6_assets/06-student01-console-login.jpeg)
+
+<img width="1601" height="907" alt="image" src="https://github.com/user-attachments/assets/c2805bb4-b987-4a1d-84a4-a5468a828dbe" />
 
 ------------------------------------------------------------------------
 
@@ -245,7 +245,8 @@ This confirms that the IAM policy is providing S3 read access.
 
 ### Screenshot --- S3 Bucket Access
 
-![S3 Bucket Access](experiment6_assets/07-s3-bucket-access.jpeg)
+
+<img width="1429" height="800" alt="image" src="https://github.com/user-attachments/assets/b26b7dad-cb94-4f45-a995-0e358bff97dd" />
 
 ------------------------------------------------------------------------
 
@@ -269,33 +270,10 @@ For testing:
 6.  A read-only user should receive an **Access Denied** response for
     unauthorized write/delete operations.
 
-> **Important:** The S3 console may display an Upload button even when
-> the user does not have permission to complete the upload. The presence
-> of the button alone does not prove that upload permission exists.
 
-### Screenshot --- Least-Privilege / Access Denied
-
-> **Attach screenshot here if you performed the permission test.**
 
 ------------------------------------------------------------------------
 
-# SCREENSHOT CHECKLIST
-
-    No. Screenshot                              Status
-  ----- --------------------------------------- ---------------------
-      1 AWS Management Console / IAM            ✅ Added
-      2 IAM Group Created                       ✅ Added
-      3 AmazonS3ReadOnlyAccess Attached         ✅ Added
-      4 IAM User `student01` Created            ✅ Added
-      5 User Added to `cloudSecurity_2026`      ⬜ Add if available
-      6 User Permissions / Attached via Group   ⬜ Add if available
-      7 Security Credentials / Console Access   ✅ Added
-      8 AWS Account Information                 ⬜ Add if required
-      9 IAM User Console Login                  ✅ Added
-     10 S3 Bucket Access                        ✅ Added
-     11 Least-Privilege / Access Denied Test    ⬜ Add if performed
-
-------------------------------------------------------------------------
 
 # EXPECTED RESULT
 
@@ -317,22 +295,4 @@ permission-based access to Amazon S3.
 
 ------------------------------------------------------------------------
 
-## FILE STRUCTURE
 
-``` text
-Experiment-6/
-│
-├── README.md
-│
-└── experiment6_assets/
-    ├── 01-iam-group-created.jpeg
-    ├── 02-s3-readonly-policy-attached.jpeg
-    ├── 03-iam-user-created.jpeg
-    ├── 04-aws-console-home.jpeg
-    ├── 05-student01-security-credentials.jpeg
-    ├── 06-student01-console-login.jpeg
-    └── 07-s3-bucket-access.jpeg
-```
-
-> **GitHub tip:** Keep the `experiment6_assets` folder in the same
-> repository as `README.md` so all screenshots display automatically.
